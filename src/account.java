@@ -1,47 +1,45 @@
-
 /**
  * Represents a bank account with basic deposit and withdrawal Operations
  */
 
-public class account {
+class account {
     private static int lastId = 0; // Tracks the last assigned ID
+    private final String firstName;
     private final int id;
     private final String lastName;
-    private final String firstName;
     private double balance;
-    private double amount;
 
     /**
-     * Construts an account with a given first nale and last name.
+     * Constructs an account with a given first name and last name.
      * initial balance set to 0.0.
-     * @param lastName its the last name of the account holder
+     * @param lastName it's the last name of the account holder
      * @param firstName is first name of the account holder
      */
 
-    public account(String lastName, String firstName) {
+
+    public account(String firstName, String lastName) {
         this.id = ++lastId;
-        this.firstName = firstName;
         this.lastName = lastName;
-        this.balance = 0.0;
+        this.firstName = firstName;
+        this.balance=0.0;
     }
 
     /**
      * The amount must be greater than zero
-     * @param amount
      * @throws IllegalArgumentException if the amount is less than or equal zero
      */
-        public void deposit (double amount){
-            if (amount <= 0){
-                throw new IllegalArgumentException("Invalid amount must be greater than 0");
+    public void deposit (double amount){
+        if (amount <= 0){
+            throw new IllegalArgumentException("Invalid amount must be greater than 0");
 
         }
         this.balance += amount;
     }
 
     /**
-     * withdrawll a specific amount from the account
-     * @param amount OF withdrawll
-     * @throws IllegalArgumentException if the amount is less than zero or exceeds thebalance
+     * withdrawal a specific amount from the account
+     * @param amount OF withdrawal
+     * @throws IllegalArgumentException if the amount is less than zero or exceeds the balance
      */
     public void withdrawal(double amount) {
         if (amount <= 0) {
@@ -56,32 +54,13 @@ public class account {
         System.out.println("Withdrawal successful! Current balance: " + balance);
     }
 
-    /**
-     * Get the first name of the holder of the account
-     * @return the first name of the holder of the account
-     */
-    public String getFirstName() {
-        return firstName;
-    }
+
+
+
+
 
     /**
-     * Get the last name of the account holder
-     * @returnthe last nameof the holder of the acount
-     */
-    public String getlastName(){
-    return  lastName;
-   }
-
-    /**
-     * get the Id num
-     * @return id num either 1 2 3 it depend son how many people entered
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * GET THE ACOUNT BALANCE
+     * GET THE ACCOUNT BALANCE
      * @return The current balance of the account
      */
     public double getBalance() {
@@ -90,13 +69,17 @@ public class account {
 
     /**
      * Returns a spring representation of the account details
-     * @return aformatted string containing the account holder name and last nameand balance
+     * @return formatted string containing the account holder name and last named balance
      */
     public  String toString() {
 
-        return "ID #1: " + firstName + " " + lastName+ " | Balance: $" + String.format("%.2f", balance);
+        return "ID #" + id + ": " + firstName + " " + lastName + " | Balance: $" + String.format("%.2f", balance);
     }
+
 }
+
+
+
 
 
 
