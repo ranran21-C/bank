@@ -68,8 +68,10 @@ Deposit: $100
 Withdrawal: $50
 Balance: $50
     </pre>
-    <h2>🎁 Fun Gift (Console Output Simulation)</h2>
-    <img src="https://github.com/ranran21-C/bank/blob/main/.gif.mp4" alt="Console Output GIF" width="300" />
+  <h2>🎁 Fun Gift (Console Output Simulation)</h2>
+    <video width="320" height="240" autoplay loop controls>
+        <source src="https://github.com/ranran21-C/bank/blob/main/.gif.mp4)" type="video/mp4">
+    </video>
 </body>
 </html>
 
