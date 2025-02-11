@@ -69,8 +69,11 @@ Withdrawal: $50
 Balance: $50
     </pre>
   <h2>🎁 Fun Gift (Console Output Simulation)</h2>
+    <h2>🎁 Fun Gift (Console Output Simulation)</h2>
     <video width="320" height="240" autoplay loop controls>
-        <source src="https://github.com/ranran21-C/bank/blob/main/.gif.mp4)" type="video/mp4">
+        <source src="https://raw.githubusercontent.com/ranran21-C/bank/main/.gif.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </video>
 </body>
 </html>
