@@ -60,7 +60,16 @@
         <li><strong>BankSystem</strong> - Manages accounts and user interactions</li>
         <li><strong>Main</strong> - Entry point of the application</li>
     </ul>
-
+ <h2>🖥️ Console Output (GIF Simulation)</h2>
+    <pre>
+Welcome to BankApp!
+Account created successfully.
+Deposit: $100
+Withdrawal: $50
+Balance: $50
+    </pre>
+    <h2>🎁 Fun Gift (Console Output Simulation)</h2>
+    <img src="" alt="Console Output GIF" width="300" />
 </body>
 </html>
 
