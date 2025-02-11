@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rania Hassani - GitHub Profile</title>
+
 </head>
 <body>
     <h1 align="center">Hi 👋, I'm Rania Hassani</h1> <h2>👩‍🎓 About Me</h2>
